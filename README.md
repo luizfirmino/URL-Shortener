@@ -18,9 +18,9 @@ For example, if I enter http://google.com/ into the input field, and I'm running
 - CSS styling is optional, functionality should be highest priority
 
 ## My Approach
-I decided to use MySQL to store the data, stored procedure and function to keep the logic and  business rules in the same place, PHP & Laravel to host and provide an API and VueJS & Quasar for the front-end.
+I decided to use MySQL to store the data, stored procedure and function to keep the logic and  business rules in the same place; PHP & Laravel to host and provide an API; and VueJS & Quasar for the front-end.
 
-This approach makes the whole application service oriented. With layers well-defined to take care of which task (data, business rules, processing and presentation) the maintenance or update of any of the layers is transparent to the rest of the system. That means less time spent with coding and integration issues.
+This approach makes the whole application service oriented. With layers well-defined to take care of each task (data, business rules, processing and presentation). The maintenance or update of any of the layers is transparent to the rest of the system. That means less time spent with coding and integration issues.
 
 There's also a PHP & Laravel front-end available as a palliative solution in case the VueJs front-end is off-line.
 
