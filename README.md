@@ -55,34 +55,34 @@ https://quasar.dev/quasar-cli/installation
 ## How to compile/launch the applications
 
 1. MySQL Dump
-  ```
-  database_dump.sql
-  ``` 
-Why not migration? The database contains objects which are not compatible with the migration process.
+```
+database_dump.sql
+``` 
+_Why not migration? The database contains objects which are not compatible with the migration process._
 
 2. Update the database credentials at `\short-urls\.ENV`
-   ```ENV
-   DB_CONNECTION=mysql
-   DB_HOST=127.0.0.1
-   DB_PORT=3306
-   DB_DATABASE=urlshortsdb
-   DB_USERNAME=root
-   DB_PASSWORD=root
-   ```
+```ENV
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=urlshortsdb
+DB_USERNAME=root
+DB_PASSWORD=root
+```
 
 3. Start the Laravel application with artisan
-  ```sh
-  php artisan serve
-  ```
+```
+composer php artisan serve
+```
 
 4. Update the API_URL with the Laravel application server at `short-urls-client\src\router\index.js`
-```
+```JS
 Vue.prototype.$API_URL = 'http://127.0.0.1:8000'
 ```
 
 5. Start the client application short-urls-client
 ```
-quasar dev
+npm quasar dev
 ```
 
 ## Contact
