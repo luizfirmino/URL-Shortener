@@ -1,0 +1,6 @@
+{
+  "@quasar/qenv": {
+    "common_root_object": "config",
+    "add_qenv_to_gitignore": true
+  }
+}
