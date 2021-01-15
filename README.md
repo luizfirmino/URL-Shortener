@@ -9,7 +9,7 @@ The task is to build a website that functions as a URL Shortener:
 
 For example, if I enter http://google.com/ into the input field, and I'm running the app locally on port 8000, I'd expect to be given back a URL that looked something like http://localhost:8000/1. Then when I visit http://localhost:8000/1, I am redirected to http://google.com/.
 
-## Expectations:
+### Expectations:
 - PHP & Laravel is preferred. You can use any php framework/micro-framework as well. If you can't do it in PHP, you may use JavaScript & Node, but must explain your tech stack choices
 - Submit the project as a Git repo/archive
 - A small README should be added with instructions on how to compile/launch your application. Maybe even add details as to your approach?
