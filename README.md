@@ -24,7 +24,6 @@ This approach makes the whole application service oriented. With layers well-def
 
 There's also a PHP & Laravel front-end available as a palliative solution in case the VueJs front-end is off-line.
 
-
 ### This package includes:
 
 short-urls-api - PHP/Laravel API and PHP/Laravel Frontend
