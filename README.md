@@ -84,3 +84,8 @@ Vue.prototype.$API_URL = 'http://127.0.0.1:8000'
 ```
 quasar dev
 ```
+
+## Contact
+
+Luiz Firmino - [@Linkedin](https://www.linkedin.com/in/luiz-firmino/) - luiz.firmino@gmail.com
+
