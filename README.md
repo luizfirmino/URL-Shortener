@@ -32,25 +32,11 @@ short-urls-api - PHP/Laravel API and PHP/Laravel Frontend
 short-urls-client - VueJS/quasar framework Frontend
 
 
-## Requirements
+### Built With
 
-### MySQL Server
-https://www.mysql.com/downloads/
-
-### NodeJs
-https://nodejs.org/en/download/
-
-### Laravel 8.x
-https://laravel.com/docs/8.x
-
-### PHP > 7 
-https://www.php.net/downloads.php
-
-### Composer
-https://getcomposer.org/
-
-### Quasar
-https://quasar.dev/quasar-cli/installation
+* [MySQL](https://www.mysql.com/downloads/)
+* [Laravel](https://laravel.com)
+* [Quasar](https://quasar.dev/quasar-cli/installation)
 
 ## How to compile/launch the applications
 
