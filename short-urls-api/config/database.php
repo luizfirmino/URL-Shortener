@@ -42,7 +42,11 @@ return [
             'prefix' => '',
             'foreign_key_constraints' => env('DB_FOREIGN_KEYS', true),
         ],
-
+        'mongodb' => [
+            'driver' => 'mongodb',
+            'dsn'=>'mongodb+srv://root:nD7jQl10X7K16Noq@cluster0.hqj2p.mongodb.net/URLShortener?retryWrites=true&w=majority',
+            'database' => 'URLShortener',
+        ],
         'mysql' => [
             'driver' => 'mysql',
             'url' => env('DATABASE_URL'),

@@ -3,7 +3,8 @@
 namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Http\Request;
-use App\Models\Urls;
+use Illuminate\Support\Str;
+use App\Models\URL;
 
 class UrlController extends Controller
 {
@@ -30,8 +31,17 @@ class UrlController extends Controller
             'url'=>'required|url|max:400'
         ]);
 
-        $url = Urls::AddShortUrl($request->input('url'));
-
+        $url = URL::where('longUrl', $request->input('url'))->first();
+        if (empty($url)){
+            $url = new URL();
+            $url->longUrl = $request->input('url');
+            $url->shortUrl = Str::random(6);
+            $url->hits = 0;
+            $url->created_at = date("Y-m-d");
+            $url->updated_at = date("Y-m-d");
+            $url->save();
+        }
+        
         return view('index', compact('url'));
     }
 
@@ -43,7 +53,7 @@ class UrlController extends Controller
      */
     public function show($url)
     {
-        $redirectTo = Urls::where('shortUrl', $url)->first();
+        $redirectTo = URL::where('shortUrl', $url)->first();
         
         if($redirectTo === null){
             return view('404');
