@@ -10,7 +10,7 @@ The task is to build a website that functions as a URL Shortener:
 For example, if I enter http://google.com/ into the input field, and I'm running the app locally on port 8000, I'd expect to be given back a URL that looked something like http://localhost:8000/1. Then when I visit http://localhost:8000/1, I am redirected to http://google.com/.
 
 ## My Approach
-I decided to use MongoDB to store the data, PHP & Laravel to host and provide an API; and VueJS & Quasar for the front-end.
+I decided to use MongoDB to store the data (cloud), PHP & Laravel to host and provide an API; and VueJS & Quasar for the front-end.
 
 This approach makes the whole application service oriented. With layers well-defined to take care of each task (data, business rules, processing and presentation). The maintenance or update of any of the layers is transparent to the rest of the system. That means less time spent with coding and integration issues.
 
