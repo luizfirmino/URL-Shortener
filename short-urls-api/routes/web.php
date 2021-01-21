@@ -1,8 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Models\Urls;
-use App\Http\Controllers\UrlController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,6 +13,6 @@ use App\Http\Controllers\UrlController;
 |
 */
 
-Route::get('/{url}', [UrlController::class, 'show']);
-Route::get('/', [UrlController::class, 'create']);
-Route::post('/', [UrlController::class, 'store'])->name('add');
+Route::get('/', function () {
+    return view('welcome');
+});
